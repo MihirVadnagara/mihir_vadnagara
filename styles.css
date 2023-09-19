@@ -1,0 +1,135 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center all content horizontally and vertically */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    min-height: 100vh; /* Ensure full viewport height */
+    background-color: #fff0e6; /* Light cream background color */
+    font-family: Arial, sans-serif;
+    color: #111; /* Dark white text color */
+}
+
+/* Style the header */
+header {
+    background-color: #fff; /* Dark white background color for header */
+    color: #007bff; /* Blue text color for header */
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #007bff; /* Blue link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Style the sections */
+section {
+    padding: 40px;
+    margin: 20px 0;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px;
+    background-color: #fff; /* White background */
+    text-align: left; /* Left-align text within sections */
+    max-width: 800px; /* Limit the width of sections */
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007bff; /* Blue section headings */
+}
+
+/* Style the buttons */
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn-warning {
+    background-color: #ffc107; /* Professional yellow color for warning button */
+    color: #333; /* Dark gray text color for warning button */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Blue background color for primary button */
+    color: #fff; /* White text color for primary button */
+}
+
+/* Portfolio Section */
+#portfolio {
+    background-color: #f9f9f9; /* Light gray background for portfolio section */
+    text-align: center; /* Center text within the portfolio section */
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Adjust the width for .project elements to accommodate larger images */
+.project {
+    width: calc(50% - 20px); /* Set the width to 50% of the container with spacing */
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px;
+    background-color: #fff; /* White background for individual projects */
+    text-align: left;
+}
+
+/* Apply specific width for Portfolio 3 (800x600 size) */
+.project:nth-child(3) img {
+    width: 800px;
+    height: 600px;
+}
+
+/* Style the individual project containers */
+.project {
+    width: calc(50% - 20px); /* Set the width to 50% of the container with spacing */
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px;
+    background-color: #fff; /* White background for individual projects */
+    text-align: left; /* Left-align text within projects */
+}
+
+/* Adjust the size of the image within "Portfolio 3" */
+.project:nth-child(3) img {
+    width: 400px; /* Adjusted width */
+    height: 600px; /* Adjusted height */
+}
+
+/* Copyright Notice */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777; /* Gray text color for the copyright notice */
+}
